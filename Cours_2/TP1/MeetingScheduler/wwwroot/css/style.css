@@ -1,0 +1,74 @@
+﻿body {
+    background-color : antiquewhite;
+    font-family : "Comic Sans MS";
+}
+
+h1, h2 {
+    color : cornflowerblue;
+    text-align : center;
+}
+
+.espace-apres {
+    margin-bottom: 0px;
+}
+
+.espace-avant {  
+    margin-top: 0px;
+}
+
+.marges {
+    margin : 4px 200px 2px 200px;
+}
+
+.center {
+    margin-left : auto;
+    margin-right : auto;
+}
+
+.encadre {
+    color: white;
+    font-size : 24px;
+    text-align : center;
+    border: 2px solid black;
+    background-color: cornflowerblue;
+}
+
+.lien {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
+    padding: 4px 15px 4px 15px;
+    background-color: cornflowerblue;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding : 6px 20px;
+    margin : 8px 0;
+    display: inline-block;
+    border : 1px solid #CCC;
+    border-radius : 4px;
+    box-sizing: border-box;
+}
+
+table, td, th {
+    width : 90%;
+    border-collapse: collapse;
+    text-align : left;
+    border : 2px solid;
+}
+
+td {
+    border-top : hidden;
+}
+
+th {
+    background-color : aquamarine;
+}
+
+tr:nth-child(even) {
+    background-color : #f2f2f2;
+}
+ 

@@ -1,0 +1,28 @@
+﻿@model MeetingScheduler.Models.GuestResponse
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Merci</title>
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+	<div align="center">
+		<h1 class="texte">Merci beaucoup, @Model?.Nom...!</h1>
+		@if (Model?.Participera == true)
+		{
+			@:C'est super que tu viennes. Les boissons sont déjà dans le frigo pour la fin !
+		}
+		else
+		{
+			@:Désolé d'apprendre que vous ne pouvez pas venir, mais merci de nous l'avoir fait savoir.
+		}
+	</div>
+	<div align="center">
+		Cliquer <a asp-action="ListResponses">ici</a> pour voir qui va assister la séance.
+	</div>
+</body>
+</html>

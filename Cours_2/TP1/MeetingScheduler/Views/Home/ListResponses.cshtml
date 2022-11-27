@@ -1,0 +1,33 @@
+﻿@model IEnumerable<MeetingScheduler.Models.GuestResponse>
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Responses</title>
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+	<div>
+		<h1 class="texte">Voici la liste des personnes attendues à la séance</h1>
+	
+		<table class="center">
+			<thead>
+				<tr><th>Nom</th><th>Email</th><th>Téléphone</th></tr>
+			</thead>
+			<tbody>
+				@foreach (MeetingScheduler.Models.GuestResponse r in Model!)
+				{
+					<tr>
+						<td>@r.Nom</td>
+						<td>@r.Email</td>
+						<td>@r.Telephone</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
