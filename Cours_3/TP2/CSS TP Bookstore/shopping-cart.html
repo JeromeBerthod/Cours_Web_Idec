@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>BookStore - Panier</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <a href="./index.html">
+      <img src="./images/logo.svg" alt="Logo" title="Accueil">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./products.html">Produits</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li>
+          <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+              <i class="fa fa-shopping-cart fa-stack-1x"></i>
+            </span>
+            <span class="count">3</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content" id="dispo-cart">
+      <h1>Panier</h1>
+      <table class="t-line">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Produit</th>
+            <th>Prix unitaire</th>
+            <th>Quantité</th>
+            <th class="last-col">Prix</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td><button type="button"><i class="fa-solid fa-xmark fa-1x"></i></button></td>
+              <td><a href="product.html">Manette Xbox 360</a></td>
+              <td>29,99 CHF</td>
+              <td><button><i class="fa-solid fa-minus fa-1x"></i></button>&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;<button><i class="fa-solid fa-plus fa-1x"></i></button></td>
+              <td class="last-col">29,99 CHF</td>
+            </tr>
+            <tr>
+              <td><button type="button"><i class="fa-solid fa-xmark fa-1x"></i></button></td>
+              <td><a href="product.html">Moniteur 19\"</a></td>
+              <td>149,99 CHF</td>
+              <td><button><i class="fa-solid fa-minus fa-1x"></i></button>&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;<button><i class="fa-solid fa-plus fa-1x"></i></button></td>
+              <td class="last-col">300,00 CHF</td>
+            </tr>
+            <tr>
+              <td><button type="button"><i class="fa-solid fa-xmark fa-1x"></i></button></td>
+              <td><a href="product.html">Apple TV</a></td>
+              <td>249,99 CHF</td>
+              <td><button><i class="fa-solid fa-minus fa-1x"></i></button>&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;<button><i class="fa-solid fa-plus fa-1x"></i></button></td>
+              <td class="last-col">500,00 CHF</td>
+            </tr>
+        </tbody>
+      </table>
+      <p class="last-col">Total: <strong>830,00 CHF</strong></p>
+      <div>
+        <button class="btn">Vider le panier</button>
+        <a class="btn" href="order.html">Commander &raquo;</a>
+      </div>
+    </div>
+  </main>
+ 
+  <footer class="footer">
+    <p>&copy; 2022 BookStore</p>
+  </footer>
+</body>
+</html>

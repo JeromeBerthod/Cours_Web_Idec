@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>BookStore - Produit</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+
+  <header>
+    <a href="./index.html">
+      <img src="./images/logo.svg" alt="Logo" title="Accueil">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a class="active" href="./products.html">Produits</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li>
+          <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+              <i class="fa fa-shopping-cart fa-stack-1x"></i>
+            </span>
+            <span class="count">3</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content" id="dispo-product">
+      <section>
+        <h1>Manette Xbox 360</h1>
+        <img src="images/xbox-controller.png" alt="">
+      </section>
+      <section>
+        <div>
+          <br><br><br>
+          <h2>Description</h2>
+          <p>Manette pouvant être branchée à une console Xbox 360 et un PC. Cette manette vous permettra de jouer à vos jeux vidéo préférés. De plus, cette manette est sans fil et comporte un port pour casque d'écoute.</p>
+          <h2>Caractéristiques</h2>
+          <ul>
+            <li>Manette sans fil 2.4GHz avec adapteur USB</li>
+            <li>Compacte et ergonomique</li>
+            <li>Port pour casque d'écoute pour Xbox Live</li>
+          </ul>
+        </div>
+        <div class="serv-form">
+          <p>Prix <strong>29,99 CHF</strong></p>       
+          <form action="shopping-cart.html" method="post">
+            <label for="product-quantity">Quantité</label>
+            <input class="form-control" type="number" id="product-quantity" value="1" min="1">
+            <button class ="btn" title="Ajouter au panier" type="submit" value="Ajouter"><i class="fa-solid fa-cart-plus"></i> Ajouter</button>
+            </form>           
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2022 BookStore</p>   
+  </footer>
+
+</body>
+</html>

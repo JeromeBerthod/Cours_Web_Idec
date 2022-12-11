@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>BookStore - Produits</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <a href="./index.html">
+      <img src="./images/logo.svg" alt="Logo" title="Accueil">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a class="active" href="./products.html">Produits</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li>
+          <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+              <i class="fa fa-shopping-cart fa-stack-1x"></i>
+            </span>
+            <span class="count">3</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content" id="dispo-products">
+      <aside aria-label="Filtres">
+        <section>
+          <h2>Catégories</h2>
+          <div id="product-categories">
+            <button class="selected">Appareils photos</button>
+            <button>Consoles</button>
+            <button>Ecrans</button>
+            <button>Ordinateurs</button>
+            <button>Tous les produits</button>
+          </div>
+        </section>
+        <section>
+          <h2>Classement</h2>
+          <div id="product-criteria">
+            <button>Prix (bas-haut)</button>
+            <button>Prix (haut-bas)</button>
+            <button>Nom (A-Z)</button>
+            <button>Nom (Z-A)</button>
+          </div>
+        </section>
+      </aside>
+  
+      <article class="serv-list">
+        <h1>Produits</h1>
+        <p id="nb-produits">6 produits</p>
+    
+        <section id="products-list">
+          <a href="product.html">
+            <h2>Manette Xbox 360 </h2>
+            <img src="images/xbox-controller.png" alt="">
+            <p><small>Prix </small>29,99 CHF</p>
+          </a>
+          <a href="product.html">
+            <h2>Caméra 1</h2>
+            <img src="images/camera-1.png" alt="">
+            <p><small>Prix </small>1000,00 CHF</p>
+          </a>
+          <a href="product.html">
+            <h2>Caméra 2</h2>
+            <img src="images/camera-2.png" alt="">
+            <p><small>Prix </small>800,00 CHF</p>
+          </a>
+          <a href="product.html">
+            <h2>Caméra 3</h2>
+            <img src="images/camera-3.png" alt="">
+            <p><small>Prix </small>600,00 CHF</p>
+          </a>
+          <a href="product.html">
+            <h2>Apple TV</h2>
+            <img src="images/apple-tv.png" alt="">
+            <p><small>Prix </small>249,99 CHF</p>
+          </a>
+          <a href="product.html">
+            <h2>Moniteur 19\"</h2>
+            <img src="images/monitor.png" alt="">
+            <p><small>Prix </small>149,99 CHF</p>
+          </a> 
+        </section>
+      </article>
+    </div>
+  </main>
+ 
+  <footer class="footer">
+    <p>&copy; 2022 BookStore</p>   
+  </footer>
+
+</body>
+</html>
